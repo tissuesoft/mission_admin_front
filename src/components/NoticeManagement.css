@@ -1,0 +1,155 @@
+/* 공지사항 관리 페이지 전체 컨테이너 스타일링 */
+.notice-management-container {
+  min-height: 100vh; /* 최소 높이를 화면 전체로 설정 */
+  background-color: #0a0a0a; /* 어두운 배경색 */
+  color: #ffffff; /* 흰색 글자 */
+  padding: 20px; /* 전체 여백 */
+}
+
+/* 헤더 스타일링 */
+.notice-header {
+  margin-bottom: 20px; /* 하단 마진 */
+}
+
+/* 뒤로 가기 버튼 스타일링 */
+.back-button {
+  padding: 12px 20px; /* 내부 여백 */
+  border: 1px solid #333; /* 테두리 */
+  border-radius: 4px; /* 모서리 둥글게 */
+  background-color: transparent; /* 투명한 배경 */
+  color: #ffffff; /* 흰색 글자 */
+  font-size: 14px; /* 글자 크기 */
+  cursor: pointer; /* 마우스 포인터 */
+  transition: all 0.3s ease; /* 애니메이션 */
+}
+
+.back-button:hover {
+  background-color: #333; /* 호버 시 배경색 */
+  border-color: #555; /* 호버 시 테두리 색상 */
+}
+
+/* 메인 콘텐츠 스타일링 */
+.notice-main {
+  display: flex; /* flexbox 사용 */
+  flex-direction: column; /* 세로 방향 배치 */
+  align-items: center; /* 수평 중앙 정렬 */
+  max-width: 800px; /* 최대 너비 */
+  margin: 0 auto; /* 중앙 정렬 */
+  padding: 40px 20px; /* 내부 여백 */
+}
+
+/* 페이지 제목 스타일링 */
+.notice-page-title {
+  font-size: 28px; /* 글자 크기 */
+  font-weight: 600; /* 글자 굵기 */
+  margin-bottom: 40px; /* 하단 마진 */
+  color: #ffffff; /* 흰색 글자 */
+  text-align: center; /* 텍스트 중앙 정렬 */
+}
+
+/* 공지사항 작성 폼 스타일링 */
+.notice-form {
+  width: 100%; /* 전체 너비 */
+  max-width: 600px; /* 최대 너비 */
+  display: flex; /* flexbox 사용 */
+  flex-direction: column; /* 세로 방향 배치 */
+  gap: 30px; /* 요소 간격 */
+}
+
+/* 폼 섹션 스타일링 */
+.form-section {
+  display: flex; /* flexbox 사용 */
+  flex-direction: column; /* 세로 방향 배치 */
+  gap: 12px; /* 라벨과 입력 필드 간격 */
+}
+
+/* 폼 라벨 스타일링 */
+.form-label {
+  font-size: 16px; /* 글자 크기 */
+  font-weight: 500; /* 글자 굵기 */
+  color: #ffffff; /* 흰색 글자 */
+  margin-bottom: 8px; /* 하단 마진 */
+}
+
+/* 제목 입력 필드 스타일링 */
+.title-input {
+  width: 100%; /* 전체 너비 */
+  padding: 16px 20px; /* 내부 여백 */
+  border: 1px solid #333; /* 테두리 */
+  border-radius: 6px; /* 모서리 둥글게 */
+  background-color: #1a1a1a; /* 어두운 배경색 */
+  color: #ffffff; /* 흰색 글자 */
+  font-size: 16px; /* 글자 크기 */
+  font-family: inherit; /* 부모 폰트 상속 */
+  transition: border-color 0.3s ease; /* 테두리 색상 애니메이션 */
+  box-sizing: border-box; /* 박스 모델을 border-box로 설정 */
+}
+
+/* 제목 입력 필드 포커스 시 스타일 */
+.title-input:focus {
+  outline: none; /* 기본 아웃라인 제거 */
+  border-color: #555; /* 포커스 시 테두리 색상 변경 */
+}
+
+/* placeholder 스타일링 */
+.title-input::placeholder {
+  color: #666; /* 회색 placeholder */
+  opacity: 1; /* 투명도 */
+}
+
+/* 내용 입력 영역 스타일링 */
+.content-textarea {
+  width: 100%; /* 전체 너비 */
+  padding: 16px 20px; /* 내부 여백 */
+  border: 1px solid #333; /* 테두리 */
+  border-radius: 6px; /* 모서리 둥글게 */
+  background-color: #1a1a1a; /* 어두운 배경색 */
+  color: #ffffff; /* 흰색 글자 */
+  font-size: 16px; /* 글자 크기 */
+  font-family: inherit; /* 부모 폰트 상속 */
+  transition: border-color 0.3s ease; /* 테두리 색상 애니메이션 */
+  box-sizing: border-box; /* 박스 모델을 border-box로 설정 */
+  min-height: 300px; /* 최소 높이 설정 */
+  resize: vertical; /* 세로 크기 조절만 허용 */
+  line-height: 1.6; /* 줄 높이 */
+}
+
+/* 내용 입력 영역 포커스 시 스타일 */
+.content-textarea:focus {
+  outline: none; /* 기본 아웃라인 제거 */
+  border-color: #555; /* 포커스 시 테두리 색상 변경 */
+}
+
+/* textarea placeholder 스타일링 */
+.content-textarea::placeholder {
+  color: #666; /* 회색 placeholder */
+  opacity: 1; /* 투명도 */
+}
+
+/* 등록 버튼 스타일링 */
+.submit-button {
+  width: 100%; /* 전체 너비 */
+  padding: 16px 24px; /* 내부 여백 */
+  border: 1px solid #333; /* 테두리 */
+  border-radius: 6px; /* 모서리 둥글게 */
+  background-color: transparent; /* 투명한 배경 */
+  color: #ffffff; /* 흰색 글자 */
+  font-size: 18px; /* 글자 크기 */
+  font-weight: 500; /* 글자 굵기 */
+  font-family: inherit; /* 부모 폰트 상속 */
+  cursor: pointer; /* 마우스 포인터 */
+  transition: all 0.3s ease; /* 모든 속성 애니메이션 */
+  margin-top: 20px; /* 상단 마진 */
+}
+
+/* 등록 버튼 호버 시 스타일 */
+.submit-button:hover {
+  background-color: #1a1a1a; /* 호버 시 배경색 변경 */
+  border-color: #555; /* 호버 시 테두리 색상 변경 */
+  transform: translateY(-2px); /* 호버 시 약간 위로 이동 */
+}
+
+/* 등록 버튼 클릭 시 스타일 */
+.submit-button:active {
+  transform: translateY(0px); /* 클릭 시 원래 위치로 */
+}

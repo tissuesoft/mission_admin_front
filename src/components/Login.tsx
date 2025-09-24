@@ -1,8 +1,12 @@
 import { useState, FormEvent } from 'react'
-import './App.css'
+import { useNavigate } from 'react-router-dom'
+import './Login.css'
 
-// 메인 앱 컴포넌트 - 로그인 페이지를 담당
-function App() {
+// 로그인 페이지 컴포넌트
+function Login() {
+  // React Router의 useNavigate 훅 - 페이지 이동을 위해 사용
+  const navigate = useNavigate()
+
   // 이메일(아이디) 상태 관리
   const [email, setEmail] = useState('')
   // 비밀번호 상태 관리
@@ -12,15 +16,9 @@ function App() {
   const handleSubmit = (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault() // 페이지 새로고침 방지
 
-    // 입력값 검증
-    if (!email || !password) {
-      alert('이메일과 비밀번호를 모두 입력해주세요.')
-      return
-    }
-
-    // 로그인 처리 로직 (실제 구현 시 API 호출)
+    // 로그인 버튼 클릭 시 바로 대시보드로 이동 (검증 없이)
     console.log('로그인 시도:', { email, password })
-    alert('로그인 버튼이 클릭되었습니다.')
+    navigate('/dashboard') // 대시보드 페이지로 리다이렉트
   }
 
   return (
@@ -49,9 +47,14 @@ function App() {
         <button type="submit" className="login-button">
           로그인
         </button>
+
+        {/* 안내 문구 */}
+        <p className="demo-info">
+          로그인 버튼을 클릭하면 대시보드로 이동합니다.
+        </p>
       </form>
     </div>
   )
 }
 
-export default App
+export default Login

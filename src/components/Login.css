@@ -65,3 +65,12 @@
 .login-button:active {
   transform: translateY(1px); /* 클릭 시 약간 아래로 이동 */
 }
+
+/* 데모 안내 문구 스타일링 */
+.demo-info {
+  text-align: center; /* 텍스트 중앙 정렬 */
+  font-size: 12px; /* 작은 글자 크기 */
+  color: #666; /* 회색 글자 */
+  margin-top: 10px; /* 상단 마진 */
+  line-height: 1.4; /* 줄 높이 */
+}

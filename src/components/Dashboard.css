@@ -1,0 +1,73 @@
+/* 대시보드 전체 컨테이너 스타일링 */
+.dashboard-container {
+  min-height: 100vh; /* 최소 높이를 화면 전체로 설정 */
+  background-color: #0a0a0a; /* 어두운 배경색 */
+  color: #ffffff; /* 흰색 글자 */
+  display: flex; /* flexbox 사용 */
+  flex-direction: column; /* 세로 방향 배치 */
+}
+
+/* 대시보드 메인 콘텐츠 스타일링 */
+.dashboard-main {
+  flex: 1; /* 남은 공간 모두 차지 */
+  display: flex; /* flexbox 사용 */
+  flex-direction: column; /* 세로 방향 배치 */
+  justify-content: center; /* 수직 중앙 정렬 */
+  align-items: center; /* 수평 중앙 정렬 */
+  padding: 0; /* 패딩 제거하여 완전한 중앙 정렬 */
+  position: relative; /* 상대적 위치 설정 */
+}
+
+/* 메뉴 버튼들 컨테이너 스타일링 */
+.menu-buttons {
+  display: flex; /* flexbox로 세로 배치 */
+  flex-direction: column; /* 세로 방향으로 배치 */
+  align-items: center; /* 수평 중앙 정렬 */
+  justify-content: center; /* 수직 중앙 정렬 */
+  gap: 20px; /* 버튼 간격 */
+  margin: 0; /* 마진 제거 */
+}
+
+/* 메뉴 버튼 스타일링 */
+.menu-button {
+  width: 300px; /* 고정 너비 */
+  padding: 16px 24px; /* 내부 여백 */
+  border: 1px solid #333; /* 어두운 테두리 */
+  border-radius: 4px; /* 모서리 둥글게 */
+  background-color: transparent; /* 투명한 배경 */
+  color: #ffffff; /* 흰색 글자 */
+  font-size: 16px; /* 글자 크기 */
+  font-family: inherit; /* 부모 요소의 폰트 상속 */
+  cursor: pointer; /* 마우스 포인터 */
+  transition: all 0.3s ease; /* 모든 속성 애니메이션 */
+  text-align: center; /* 텍스트 중앙 정렬 */
+}
+
+/* 메뉴 버튼 호버 시 스타일 */
+.menu-button:hover {
+  background-color: #1a1a1a; /* 호버 시 배경색 변경 */
+  border-color: #555; /* 호버 시 테두리 색상 변경 */
+  transform: translateY(-2px); /* 호버 시 약간 위로 이동 */
+}
+
+/* 메뉴 버튼 클릭 시 스타일 */
+.menu-button:active {
+  transform: translateY(0px); /* 클릭 시 원래 위치로 */
+}
+
+/* 대시보드 하단 푸터 스타일링 */
+.dashboard-footer {
+  position: absolute; /* 절대 위치 설정 */
+  bottom: 20px; /* 하단에서 20px 위 */
+  left: 50%; /* 좌측에서 50% 위치 */
+  transform: translateX(-50%); /* 수평 중앙 정렬 */
+  text-align: center; /* 텍스트 중앙 정렬 */
+}
+
+/* 푸터 텍스트 스타일링 */
+.dashboard-footer p {
+  font-size: 14px; /* 글자 크기 */
+  color: #666; /* 회색 글자 */
+  margin: 0; /* 마진 제거 */
+  opacity: 0.8; /* 투명도 */
+}
